@@ -1,0 +1,13 @@
+kind: Build
+name: play-garden
+description: tests
+type: container
+
+---
+
+kind: Test
+type: container
+name: playwright
+build: play-garden
+spec:
+  command: ["npx", "playwright", "test"]
