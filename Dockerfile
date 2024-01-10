@@ -6,5 +6,3 @@ COPY package*.json ./
 COPY . .
 
 RUN npm install
-
-CMD ["npx", "playwright", "test"]
